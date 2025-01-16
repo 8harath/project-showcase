@@ -67,4 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.showProjectDetails = showProjectDetails;
     window.closeProjectDetails = closeProjectDetails;
+
+    // Add event listener for closing the modal when clicking outside the content
+    projectDetailsModal.addEventListener('click', (event) => {
+        if (event.target === projectDetailsModal) {
+            closeProjectDetails();
+        }
+    });
+
+    // Add ARIA roles for accessibility
+    projectDetailsModal.setAttribute('role', 'dialog');
+    projectDetailsModal.setAttribute('aria-modal', 'true');
+    projectDetails.setAttribute('role', 'document');
 });

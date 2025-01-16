@@ -76,6 +76,7 @@ h1 {
     width: 80%;
     max-width: 600px;
     text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .close-button {
@@ -90,4 +91,39 @@ h1 {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+.project-images img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.project-tag {
+    background-color: #00ffcc;
+    color: #0d0b0b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.project-tag:hover {
+    background-color: #9b59b6;
+    color: #f0f0f0;
 }

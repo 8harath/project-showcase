@@ -14,6 +14,9 @@ This project is a sophisticated, visually appealing webpage designed to effectiv
 - When a user clicks on any of the project boxes, an animated pop-up within the same page (without navigation or page refresh) smoothly transitions open.
 - This pop-up reveals detailed information about the project, including an expanded description, images, screenshots, and relevant context such as the technologies used and the goals achieved. The pop-up also includes a visible and clickable link to the live project or its repository (e.g., GitHub, personal site).
 - The animation for the pop-up is subtle and fluid, enhancing the user experience without being overwhelming.
+- The pop-up design fully integrates with the existing color scheme and theme, including individual tags or icons for technologies used.
+- The pop-up includes smooth transitions or animations consistent with the cyberpunk aesthetic.
+- The pop-up is fully responsive and accessible.
 
 ### Overall Aesthetic and Design
 
