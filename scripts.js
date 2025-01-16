@@ -67,4 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.showProjectDetails = showProjectDetails;
     window.closeProjectDetails = closeProjectDetails;
+
+    function showLoadingSpinner() {
+        const loadingSpinner = document.getElementById('loading-spinner');
+        loadingSpinner.style.display = 'block';
+    }
+
+    function hideLoadingSpinner() {
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const content = document.getElementById('content');
+        loadingSpinner.style.display = 'none';
+        content.style.opacity = '1';
+    }
+
+    document.addEventListener('DOMContentLoaded', showLoadingSpinner);
+    window.addEventListener('load', hideLoadingSpinner);
 });

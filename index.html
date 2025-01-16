@@ -8,77 +8,80 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-    </header>
-    <main>
-        <section id="project-showcase">
-            <div class="project-box" onclick="showProjectDetails(1)">
-                <img src="project1.jpg" alt="Project 1">
-                <h2>Project 1</h2>
-                <p>A brief description of Project 1.</p>
+    <div id="loading-spinner"></div>
+    <div id="content">
+        <header>
+            <h1>My Projects</h1>
+        </header>
+        <main>
+            <section id="project-showcase">
+                <div class="project-box" onclick="showProjectDetails(1)">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h2>Project 1</h2>
+                    <p>A brief description of Project 1.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(2)">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h2>Project 2</h2>
+                    <p>A brief description of Project 2.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(3)">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h2>Project 3</h2>
+                    <p>A brief description of Project 3.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(4)">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h2>Project 4</h2>
+                    <p>A brief description of Project 4.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(5)">
+                    <img src="project5.jpg" alt="Project 5">
+                    <h2>Project 5</h2>
+                    <p>A brief description of Project 5.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(6)">
+                    <img src="project6.jpg" alt="Project 6">
+                    <h2>Project 6</h2>
+                    <p>A brief description of Project 6.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(7)">
+                    <img src="project7.jpg" alt="Project 7">
+                    <h2>Project 7</h2>
+                    <p>A brief description of Project 7.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(8)">
+                    <img src="project8.jpg" alt="Project 8">
+                    <h2>Project 8</h2>
+                    <p>A brief description of Project 8.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(9)">
+                    <img src="project9.jpg" alt="Project 9">
+                    <h2>Project 9</h2>
+                    <p>A brief description of Project 9.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(10)">
+                    <img src="project10.jpg" alt="Project 10">
+                    <h2>Project 10</h2>
+                    <p>A brief description of Project 10.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(11)">
+                    <img src="project11.jpg" alt="Project 11">
+                    <h2>Project 11</h2>
+                    <p>A brief description of Project 11.</p>
+                </div>
+                <div class="project-box" onclick="showProjectDetails(12)">
+                    <img src="project12.jpg" alt="Project 12">
+                    <h2>Project 12</h2>
+                    <p>A brief description of Project 12.</p>
+                </div>
+            </section>
+        </main>
+        <div id="project-details-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeProjectDetails()">&times;</span>
+                <div id="project-details"></div>
             </div>
-            <div class="project-box" onclick="showProjectDetails(2)">
-                <img src="project2.jpg" alt="Project 2">
-                <h2>Project 2</h2>
-                <p>A brief description of Project 2.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(3)">
-                <img src="project3.jpg" alt="Project 3">
-                <h2>Project 3</h2>
-                <p>A brief description of Project 3.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(4)">
-                <img src="project4.jpg" alt="Project 4">
-                <h2>Project 4</h2>
-                <p>A brief description of Project 4.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(5)">
-                <img src="project5.jpg" alt="Project 5">
-                <h2>Project 5</h2>
-                <p>A brief description of Project 5.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(6)">
-                <img src="project6.jpg" alt="Project 6">
-                <h2>Project 6</h2>
-                <p>A brief description of Project 6.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(7)">
-                <img src="project7.jpg" alt="Project 7">
-                <h2>Project 7</h2>
-                <p>A brief description of Project 7.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(8)">
-                <img src="project8.jpg" alt="Project 8">
-                <h2>Project 8</h2>
-                <p>A brief description of Project 8.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(9)">
-                <img src="project9.jpg" alt="Project 9">
-                <h2>Project 9</h2>
-                <p>A brief description of Project 9.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(10)">
-                <img src="project10.jpg" alt="Project 10">
-                <h2>Project 10</h2>
-                <p>A brief description of Project 10.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(11)">
-                <img src="project11.jpg" alt="Project 11">
-                <h2>Project 11</h2>
-                <p>A brief description of Project 11.</p>
-            </div>
-            <div class="project-box" onclick="showProjectDetails(12)">
-                <img src="project12.jpg" alt="Project 12">
-                <h2>Project 12</h2>
-                <p>A brief description of Project 12.</p>
-            </div>
-        </section>
-    </main>
-    <div id="project-details-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeProjectDetails()">&times;</span>
-            <div id="project-details"></div>
         </div>
     </div>
 </body>
