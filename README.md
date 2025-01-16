@@ -26,6 +26,10 @@ This project is a sophisticated, visually appealing webpage designed to effectiv
 
 To further enhance the user experience and create a more engaging and visually dynamic interface, the following sophisticated, stylish, and unique animations have been integrated:
 
+### Loading Animations
+
+- A loading animation is implemented when the page is first loaded, including a spinner or progress bar, and a fade-in effect for the content once it is fully loaded. This keeps users engaged while the content is being fetched.
+
 ### Entrance Animations for Project Boxes
 
 - Project boxes now feature entrance animations using CSS keyframes for a fade-in and slide-up effect. This creates a smooth and visually appealing transition as the user scrolls through the projects.
@@ -37,6 +41,10 @@ To further enhance the user experience and create a more engaging and visually d
 ### Hover Animations for Project Images
 
 - Project images now include hover animations with a slight rotation and scale effect. This interactive element adds a touch of playfulness and visual interest, encouraging users to explore the projects further.
+
+### Hover Animations for Buttons and Links
+
+- Buttons and links now have hover animations, including slight rotation and border color change. This provides visual feedback and makes the elements more interactive.
 
 These animation enhancements not only improve the visual appeal of the webpage but also contribute to a more immersive and enjoyable user experience. By balancing aesthetics with usability, the design stands out while maintaining functional and user-friendly interactions.
 
