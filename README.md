@@ -6,7 +6,7 @@ This project is a sophisticated, visually appealing webpage designed to effectiv
 
 ### Project Showcase Section
 
-- Display three distinct project entries within a single row, each encapsulated in a box. Each box features a project image, a concise heading (title), and a brief, one-sentence description that succinctly introduces the project.
+- Display twelve distinct project entries within a four-column grid, each encapsulated in a box. Each box features a project image, a concise heading (title), and a brief, one-sentence description that succinctly introduces the project.
 - The layout maintains balance and visual harmony, with ample whitespace and careful alignment for a clean, modern look.
 
 ### Interactive Pop-Up for Project Details
