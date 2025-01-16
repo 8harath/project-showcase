@@ -149,3 +149,10 @@ h1 {
         transform: rotate(360deg);
     }
 }
+
+/* Hover animations for buttons and links */
+button:hover, a:hover {
+    transform: rotate(2deg);
+    border-color: #3498db;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
