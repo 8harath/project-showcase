@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectDetailsModal = document.getElementById('project-details-modal');
     const projectDetails = document.getElementById('project-details');
     const themeToggleButton = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
 
     function showProjectDetails(projectId) {
@@ -141,6 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function toggleTheme() {
         body.classList.toggle('light-theme');
+        if (body.classList.contains('light-theme')) {
+            themeIcon.src = 'night-icon.png';
+        } else {
+            themeIcon.src = 'day-icon.png';
+        }
     }
 
     themeToggleButton.addEventListener('click', toggleTheme);
