@@ -135,7 +135,7 @@ h1 {
 #portfolio-button {
     display: block;
     width: 200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 10px 20px;
     background-color: #9b59b6;
     color: #fff;
