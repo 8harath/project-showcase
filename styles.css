@@ -131,3 +131,27 @@ h1 {
         opacity: 1;
     }
 }
+
+#portfolio-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#portfolio-button:hover {
+    background-color: #8e44ad;
+}
+
+#bottom-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #ccc;
+}
