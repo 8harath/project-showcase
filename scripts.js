@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectDetailsModal = document.getElementById('project-details-modal');
     const projectDetails = document.getElementById('project-details');
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
 
     function showProjectDetails(projectId) {
         const projectData = getProjectData(projectId);
@@ -136,6 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
             projectDetailsModal.style.display = 'none';
         }, 300);
     }
+
+    function toggleTheme() {
+        body.classList.toggle('light-theme');
+    }
+
+    themeToggleButton.addEventListener('click', toggleTheme);
 
     window.showProjectDetails = showProjectDetails;
     window.closeProjectDetails = closeProjectDetails;

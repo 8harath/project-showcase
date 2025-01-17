@@ -4,12 +4,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
     text-align: center;
     padding: 20px;
     background-color: #1e1e1e;
+    transition: background-color 0.3s ease;
 }
 
 h1 {
@@ -154,4 +156,40 @@ h1 {
     margin: 20px 0;
     font-size: 1.2em;
     color: #ccc;
+}
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #0d0b0b;
+}
+
+header.light-theme {
+    background-color: #ffffff;
+}
+
+.project-box.light-theme {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+.project-box.light-theme:hover {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+.modal-content.light-theme {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+#portfolio-button.light-theme {
+    background-color: #ffcc99;
+    color: #0d0b0b;
+}
+
+#portfolio-button.light-theme:hover {
+    background-color: #ffb366;
+}
+
+#bottom-text.light-theme {
+    color: #0d0b0b;
 }
