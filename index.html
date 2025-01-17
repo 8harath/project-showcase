@@ -77,6 +77,51 @@
                 <p>A brief description of Project 12.</p>
             </div>
         </section>
+        <section id="online-voting-system">
+            <h2>Online Voting System</h2>
+            <div id="voter-registration">
+                <h3>Voter Registration</h3>
+                <form id="registration-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div id="login-functionality">
+                <h3>Login</h3>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="candidate-listings">
+                <h3>Candidate Listings</h3>
+                <ul id="candidate-list">
+                    <!-- Candidate profiles will be dynamically added here -->
+                </ul>
+            </div>
+            <div id="electronic-voting">
+                <h3>Electronic Voting</h3>
+                <form id="voting-form">
+                    <label for="candidate">Choose a candidate:</label>
+                    <select id="candidate" name="candidate" required>
+                        <!-- Candidate options will be dynamically added here -->
+                    </select>
+                    <button type="submit">Vote</button>
+                </form>
+            </div>
+            <div id="vote-confirmation">
+                <h3>Vote Confirmation</h3>
+                <p id="confirmation-message"></p>
+            </div>
+        </section>
     </main>
     <div id="project-details-modal" class="modal">
         <div class="modal-content">

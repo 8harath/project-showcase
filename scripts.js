@@ -153,4 +153,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.showProjectDetails = showProjectDetails;
     window.closeProjectDetails = closeProjectDetails;
+
+    // Online Voting System functionality
+    const registrationForm = document.getElementById('registration-form');
+    const loginForm = document.getElementById('login-form');
+    const votingForm = document.getElementById('voting-form');
+    const candidateList = document.getElementById('candidate-list');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    const users = [];
+    const candidates = [
+        { id: 1, name: 'Candidate 1' },
+        { id: 2, name: 'Candidate 2' },
+        { id: 3, name: 'Candidate 3' }
+    ];
+    let loggedInUser = null;
+
+    registrationForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = registrationForm.name.value;
+        const email = registrationForm.email.value;
+        const password = registrationForm.password.value;
+        users.push({ name, email, password });
+        alert('Registration successful!');
+        registrationForm.reset();
+    });
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = loginForm['login-email'].value;
+        const password = loginForm['login-password'].value;
+        const user = users.find(user => user.email === email && user.password === password);
+        if (user) {
+            loggedInUser = user;
+            alert('Login successful!');
+            loginForm.reset();
+            displayCandidates();
+        } else {
+            alert('Invalid email or password.');
+        }
+    });
+
+    votingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!loggedInUser) {
+            alert('Please log in to vote.');
+            return;
+        }
+        const candidateId = parseInt(votingForm.candidate.value);
+        const candidate = candidates.find(candidate => candidate.id === candidateId);
+        if (candidate) {
+            confirmationMessage.textContent = `Thank you for voting for ${candidate.name}. Your vote has been recorded.`;
+            votingForm.reset();
+        } else {
+            alert('Invalid candidate.');
+        }
+    });
+
+    function displayCandidates() {
+        candidateList.innerHTML = candidates.map(candidate => `<li>${candidate.name}</li>`).join('');
+        const candidateSelect = votingForm.candidate;
+        candidateSelect.innerHTML = candidates.map(candidate => `<option value="${candidate.id}">${candidate.name}</option>`).join('');
+    }
 });

@@ -193,3 +193,117 @@ header.light-theme {
 #bottom-text.light-theme {
     color: #0d0b0b;
 }
+
+#online-voting-system {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #f0f0f0;
+}
+
+#online-voting-system h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #9b59b6;
+}
+
+#online-voting-system h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #9b59b6;
+}
+
+#online-voting-system form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#online-voting-system label {
+    font-size: 1em;
+    color: #ccc;
+}
+
+#online-voting-system input,
+#online-voting-system select {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #0d0b0b;
+    color: #f0f0f0;
+}
+
+#online-voting-system button {
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#online-voting-system button:hover {
+    background-color: #8e44ad;
+}
+
+#online-voting-system ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#online-voting-system li {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+#online-voting-system p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+body.light-theme #online-voting-system {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #0d0b0b;
+}
+
+body.light-theme #online-voting-system h2,
+body.light-theme #online-voting-system h3 {
+    color: #ffcc99;
+}
+
+body.light-theme #online-voting-system label {
+    color: #0d0b0b;
+}
+
+body.light-theme #online-voting-system input,
+body.light-theme #online-voting-system select {
+    background-color: #f0f0f0;
+    color: #0d0b0b;
+}
+
+body.light-theme #online-voting-system button {
+    background-color: #ffcc99;
+    color: #0d0b0b;
+}
+
+body.light-theme #online-voting-system button:hover {
+    background-color: #ffb366;
+}
+
+body.light-theme #online-voting-system li {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #0d0b0b;
+}
+
+body.light-theme #online-voting-system p {
+    color: #0d0b0b;
+}
