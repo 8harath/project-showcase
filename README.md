@@ -57,3 +57,28 @@ These animation enhancements not only improve the visual appeal of the webpage b
 - HTML
 - CSS
 - JavaScript
+- React
+- Node.js
+- Python
+- Django
+- Java
+- Spring Boot
+- C#
+- .NET
+- Ruby on Rails
+- PHP
+- Laravel
+- Angular
+- TypeScript
+- Vue.js
+- Firebase
+- Swift
+- iOS
+- Kotlin
+- Android
+- Go
+- Docker
+
+## Project Purpose
+
+The purpose of this project is to provide a comprehensive and visually appealing showcase of my work as a computer science student. It aims to highlight the diverse range of projects I have completed, demonstrating my skills and expertise in various technologies and programming languages. The project also serves as a portfolio to present to potential employers, collaborators, and peers, showcasing my ability to design and develop sophisticated web applications with a focus on user experience and aesthetic appeal.

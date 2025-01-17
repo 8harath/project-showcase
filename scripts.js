@@ -33,6 +33,78 @@ document.addEventListener('DOMContentLoaded', () => {
                 images: ['project3-1.jpg', 'project3-2.jpg'],
                 technologies: 'Python, Django',
                 link: 'https://github.com/user/project3'
+            },
+            {
+                id: 4,
+                title: 'Project 4',
+                description: 'An expanded description of Project 4.',
+                images: ['project4-1.jpg', 'project4-2.jpg'],
+                technologies: 'Java, Spring Boot',
+                link: 'https://github.com/user/project4'
+            },
+            {
+                id: 5,
+                title: 'Project 5',
+                description: 'An expanded description of Project 5.',
+                images: ['project5-1.jpg', 'project5-2.jpg'],
+                technologies: 'C#, .NET',
+                link: 'https://github.com/user/project5'
+            },
+            {
+                id: 6,
+                title: 'Project 6',
+                description: 'An expanded description of Project 6.',
+                images: ['project6-1.jpg', 'project6-2.jpg'],
+                technologies: 'Ruby on Rails',
+                link: 'https://github.com/user/project6'
+            },
+            {
+                id: 7,
+                title: 'Project 7',
+                description: 'An expanded description of Project 7.',
+                images: ['project7-1.jpg', 'project7-2.jpg'],
+                technologies: 'PHP, Laravel',
+                link: 'https://github.com/user/project7'
+            },
+            {
+                id: 8,
+                title: 'Project 8',
+                description: 'An expanded description of Project 8.',
+                images: ['project8-1.jpg', 'project8-2.jpg'],
+                technologies: 'Angular, TypeScript',
+                link: 'https://github.com/user/project8'
+            },
+            {
+                id: 9,
+                title: 'Project 9',
+                description: 'An expanded description of Project 9.',
+                images: ['project9-1.jpg', 'project9-2.jpg'],
+                technologies: 'Vue.js, Firebase',
+                link: 'https://github.com/user/project9'
+            },
+            {
+                id: 10,
+                title: 'Project 10',
+                description: 'An expanded description of Project 10.',
+                images: ['project10-1.jpg', 'project10-2.jpg'],
+                technologies: 'Swift, iOS',
+                link: 'https://github.com/user/project10'
+            },
+            {
+                id: 11,
+                title: 'Project 11',
+                description: 'An expanded description of Project 11.',
+                images: ['project11-1.jpg', 'project11-2.jpg'],
+                technologies: 'Kotlin, Android',
+                link: 'https://github.com/user/project11'
+            },
+            {
+                id: 12,
+                title: 'Project 12',
+                description: 'An expanded description of Project 12.',
+                images: ['project12-1.jpg', 'project12-2.jpg'],
+                technologies: 'Go, Docker',
+                link: 'https://github.com/user/project12'
             }
         ];
 
