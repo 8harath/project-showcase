@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectDetailsModal = document.getElementById('project-details-modal');
     const projectDetails = document.getElementById('project-details');
+    const searchBar = document.getElementById('search-bar');
+    const filterSelect = document.getElementById('filter-select');
+    const loadMoreButton = document.getElementById('load-more-button');
+    const contactForm = document.getElementById('contact-form');
+    let visibleProjects = 12;
 
     function showProjectDetails(projectId) {
         const projectData = getProjectData(projectId);
@@ -136,6 +141,56 @@ document.addEventListener('DOMContentLoaded', () => {
             projectDetailsModal.style.display = 'none';
         }, 300);
     }
+
+    function filterProjects() {
+        const searchTerm = searchBar.value.toLowerCase();
+        const filterValue = filterSelect.value;
+        const projectBoxes = document.querySelectorAll('.project-box');
+
+        projectBoxes.forEach(box => {
+            const title = box.querySelector('h2').textContent.toLowerCase();
+            const technologies = box.querySelector('p').textContent.toLowerCase();
+            const matchesSearch = title.includes(searchTerm);
+            const matchesFilter = filterValue === 'all' || technologies.includes(filterValue.toLowerCase());
+
+            if (matchesSearch && matchesFilter) {
+                box.style.display = 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
+    }
+
+    function loadMoreProjects() {
+        const projectBoxes = document.querySelectorAll('.project-box');
+        const totalProjects = projectBoxes.length;
+
+        for (let i = visibleProjects; i < visibleProjects + 4 && i < totalProjects; i++) {
+            projectBoxes[i].style.display = 'block';
+        }
+
+        visibleProjects += 4;
+
+        if (visibleProjects >= totalProjects) {
+            loadMoreButton.style.display = 'none';
+        }
+    }
+
+    function handleFormSubmission(event) {
+        event.preventDefault();
+        const formData = new FormData(contactForm);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+
+        console.log('Form submitted:', { name, email, message });
+        contactForm.reset();
+    }
+
+    searchBar.addEventListener('input', filterProjects);
+    filterSelect.addEventListener('change', filterProjects);
+    loadMoreButton.addEventListener('click', loadMoreProjects);
+    contactForm.addEventListener('submit', handleFormSubmission);
 
     window.showProjectDetails = showProjectDetails;
     window.closeProjectDetails = closeProjectDetails;

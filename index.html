@@ -13,6 +13,37 @@
     </header>
     <main>
         <section id="project-showcase">
+            <input type="text" id="search-bar" placeholder="Search projects...">
+            <div id="filter-options">
+                <label for="filter-select">Filter by technology:</label>
+                <select id="filter-select">
+                    <option value="all">All</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                    <option value="Node.js">Node.js</option>
+                    <option value="Python">Python</option>
+                    <option value="Django">Django</option>
+                    <option value="Java">Java</option>
+                    <option value="Spring Boot">Spring Boot</option>
+                    <option value="C#">C#</option>
+                    <option value=".NET">.NET</option>
+                    <option value="Ruby on Rails">Ruby on Rails</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Laravel">Laravel</option>
+                    <option value="Angular">Angular</option>
+                    <option value="TypeScript">TypeScript</option>
+                    <option value="Vue.js">Vue.js</option>
+                    <option value="Firebase">Firebase</option>
+                    <option value="Swift">Swift</option>
+                    <option value="iOS">iOS</option>
+                    <option value="Kotlin">Kotlin</option>
+                    <option value="Android">Android</option>
+                    <option value="Go">Go</option>
+                    <option value="Docker">Docker</option>
+                </select>
+            </div>
             <div class="project-box" onclick="showProjectDetails(1)">
                 <img src="project1.jpg" alt="Project 1">
                 <h2>Online Voting System</h2>
@@ -74,6 +105,7 @@
                 <p>A brief description of Project 12.</p>
             </div>
         </section>
+        <button id="load-more-button">Load More</button>
     </main>
     <div id="project-details-modal" class="modal">
         <div class="modal-content">
@@ -85,5 +117,17 @@
     <div id="bottom-text" style="text-align: center;">
         <p>Thank you for visiting my project showcase. Feel free to explore my portfolio for more information about my work and skills.</p>
     </div>
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
