@@ -155,3 +155,64 @@ h1 {
     font-size: 1.2em;
     color: #ccc;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #project-showcase {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    #project-showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #project-showcase {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .project-box h2 {
+        font-size: 1.3em;
+    }
+
+    .project-box p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .project-box h2 {
+        font-size: 1.2em;
+    }
+
+    .project-box p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .project-box h2 {
+        font-size: 1em;
+    }
+
+    .project-box p {
+        font-size: 0.7em;
+    }
+}
