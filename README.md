@@ -120,3 +120,22 @@ The purpose of this project is to provide a comprehensive and visually appealing
 ### Contact Me Section
 
 - **Contact Form**: Fill out the contact form at the bottom of the page to reach out for inquiries or collaborations. Provide your name, email, and message, then click "Send" to submit the form.
+
+## Instructions for Running Unit Tests
+
+1. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+2. Run the unit tests:
+    ```bash
+    npm test
+    ```
+
+## Continuous Integration Pipeline
+
+This project includes a continuous integration (CI) pipeline to automatically run tests and build the project on each commit. The CI pipeline ensures code quality and reduces the risk of introducing bugs. The pipeline is configured to run the following tasks:
+
+- Linting the code to ensure it follows the coding standards.
+- Running unit tests to verify the functionality of the code.
+- Building the project to ensure it compiles without errors.

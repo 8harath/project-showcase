@@ -6,17 +6,19 @@
     <title>Project Showcase</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>My Projects</h1>
     </header>
     <main>
-        <section id="project-showcase">
-            <input type="text" id="search-bar" placeholder="Search projects...">
+        <section id="project-showcase" role="region" aria-labelledby="project-showcase-heading">
+            <h2 id="project-showcase-heading" class="visually-hidden">Project Showcase</h2>
+            <input type="text" id="search-bar" placeholder="Search projects..." aria-label="Search projects">
             <div id="filter-options">
                 <label for="filter-select">Filter by technology:</label>
-                <select id="filter-select">
+                <select id="filter-select" aria-label="Filter by technology">
                     <option value="all">All</option>
                     <option value="HTML">HTML</option>
                     <option value="CSS">CSS</option>
@@ -44,62 +46,62 @@
                     <option value="Docker">Docker</option>
                 </select>
             </div>
-            <div class="project-box" onclick="showProjectDetails(1)">
+            <div class="project-box" onclick="showProjectDetails(1)" role="button" tabindex="0" aria-label="Online Voting System">
                 <img src="project1.jpg" alt="Project 1">
                 <h2>Online Voting System</h2>
                 <p>A brief description of Project 1.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(2)">
+            <div class="project-box" onclick="showProjectDetails(2)" role="button" tabindex="0" aria-label="Project 2">
                 <img src="project2.jpg" alt="Project 2">
                 <h2>Project 2</h2>
                 <p>A brief description of Project 2.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(3)">
+            <div class="project-box" onclick="showProjectDetails(3)" role="button" tabindex="0" aria-label="Project 3">
                 <img src="project3.jpg" alt="Project 3">
                 <h2>Project 3</h2>
                 <p>A brief description of Project 3.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(4)">
+            <div class="project-box" onclick="showProjectDetails(4)" role="button" tabindex="0" aria-label="Project 4">
                 <img src="project4.jpg" alt="Project 4">
                 <h2>Project 4</h2>
                 <p>A brief description of Project 4.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(5)">
+            <div class="project-box" onclick="showProjectDetails(5)" role="button" tabindex="0" aria-label="Project 5">
                 <img src="project5.jpg" alt="Project 5">
                 <h2>Project 5</h2>
                 <p>A brief description of Project 5.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(6)">
+            <div class="project-box" onclick="showProjectDetails(6)" role="button" tabindex="0" aria-label="Project 6">
                 <img src="project6.jpg" alt="Project 6">
                 <h2>Project 6</h2>
                 <p>A brief description of Project 6.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(7)">
+            <div class="project-box" onclick="showProjectDetails(7)" role="button" tabindex="0" aria-label="Project 7">
                 <img src="project7.jpg" alt="Project 7">
                 <h2>Project 7</h2>
                 <p>A brief description of Project 7.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(8)">
+            <div class="project-box" onclick="showProjectDetails(8)" role="button" tabindex="0" aria-label="Project 8">
                 <img src="project8.jpg" alt="Project 8">
                 <h2>Project 8</h2>
                 <p>A brief description of Project 8.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(9)">
+            <div class="project-box" onclick="showProjectDetails(9)" role="button" tabindex="0" aria-label="Project 9">
                 <img src="project9.jpg" alt="Project 9">
                 <h2>Project 9</h2>
                 <p>A brief description of Project 9.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(10)">
+            <div class="project-box" onclick="showProjectDetails(10)" role="button" tabindex="0" aria-label="Project 10">
                 <img src="project10.jpg" alt="Project 10">
                 <h2>Project 10</h2>
                 <p>A brief description of Project 10.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(11)">
+            <div class="project-box" onclick="showProjectDetails(11)" role="button" tabindex="0" aria-label="Project 11">
                 <img src="project11.jpg" alt="Project 11">
                 <h2>Project 11</h2>
                 <p>A brief description of Project 11.</p>
             </div>
-            <div class="project-box" onclick="showProjectDetails(12)">
+            <div class="project-box" onclick="showProjectDetails(12)" role="button" tabindex="0" aria-label="Project 12">
                 <img src="project12.jpg" alt="Project 12">
                 <h2>Project 12</h2>
                 <p>A brief description of Project 12.</p>
@@ -107,25 +109,25 @@
         </section>
         <button id="load-more-button">Load More</button>
     </main>
-    <div id="project-details-modal" class="modal">
+    <div id="project-details-modal" class="modal" role="dialog" aria-labelledby="project-details-heading" aria-hidden="true">
         <div class="modal-content">
-            <span class="close-button" onclick="closeProjectDetails()">&times;</span>
-            <div id="project-details"></div>
+            <span class="close-button" onclick="closeProjectDetails()" role="button" tabindex="0" aria-label="Close">&times;</span>
+            <div id="project-details" role="document"></div>
         </div>
     </div>
     <a id="portfolio-button" href="https://your-portfolio-website.com" target="_blank" style="display: block; margin: 0 auto;">Visit My Portfolio</a>
     <div id="bottom-text" style="text-align: center;">
         <p>Thank you for visiting my project showcase. Feel free to explore my portfolio for more information about my work and skills.</p>
     </div>
-    <section id="contact-me">
-        <h2>Contact Me</h2>
+    <section id="contact-me" role="form" aria-labelledby="contact-me-heading">
+        <h2 id="contact-me-heading">Contact Me</h2>
         <form id="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required aria-required="true">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required aria-required="true">
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
