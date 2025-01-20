@@ -216,3 +216,82 @@ h1 {
         font-size: 0.7em;
     }
 }
+
+/* Styles for Contact Me section */
+#contact-me {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: #f0f0f0;
+}
+
+#contact-me-heading {
+    font-size: 2em;
+    color: #9b59b6;
+    text-align: center;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ccc;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #0d0b0b;
+    color: #f0f0f0;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #8e44ad;
+}
+
+/* Styles for filtering and searching elements */
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #0d0b0b;
+    color: #f0f0f0;
+}
+
+#filter-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#filter-options label {
+    margin-right: 10px;
+    color: #ccc;
+}
+
+#filter-select {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #0d0b0b;
+    color: #f0f0f0;
+}
